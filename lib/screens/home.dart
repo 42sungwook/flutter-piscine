@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_piscine/config/theme.dart';
+import 'package:flutter_piscine/widgets/common/app_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -23,6 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: MainAppBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
